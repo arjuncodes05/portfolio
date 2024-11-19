@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
 }
 
-
 body{
     width: 100%;
     height: 100vh;
@@ -25,7 +24,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
 
 .hidden{
     visibility: hidden;
@@ -52,8 +50,6 @@ header{
     gap: 1rem;
     padding-block: 0.5rem ;
 }
-
-
 
 nav ul{
     display: flex;
@@ -83,19 +79,15 @@ nav ul{
     }
 }
 
-
 li{
     cursor: pointer;
     scroll-behavior: smooth;
 }
 
-
-
-
 /* intro section */
 .intro-section{
     width: 100%;
-    height: calc(100vh - 4rem);
+    min-height: calc(100vh - 4rem);
     gap: 2rem;
     padding-inline: 8vw;
     justify-content: space-between;
@@ -181,7 +173,6 @@ li{
     .intro-img{
         border-radius: 8px;
         overflow: hidden;
-        background-color: red;
         
         img{
             clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -190,7 +181,6 @@ li{
     }
 }
 
-
 @keyframes shine {
     from{
         left: 0%;
@@ -198,7 +188,6 @@ li{
     to{
         left: 90%
     }
-    
 }
 
 @keyframes typing{
@@ -218,7 +207,6 @@ li{
         border-color: red;
     }
 }
-
 
 
 
@@ -267,7 +255,6 @@ li{
     word-spacing: 3px;
     width: 50%;
 }
-
 
 .remove-about-popup{
     position: absolute;
@@ -339,7 +326,6 @@ li{
     transform: translate(-50%, -50%);
     z-index: -1;
     border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.1); */
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -430,8 +416,6 @@ li{
         transform: translateY(0%) rotateY(180deg);
     }
 }
-
-
 
 .contact-container > div{
     /* width: 100%; */
@@ -532,7 +516,6 @@ form > div{
 }
 
 
-
 footer{
     background-color: #789DBC;
     height: 1.5rem;
@@ -564,8 +547,6 @@ footer{
 
 
 
-
-
 @media (max-width: 1024px){
     .intro-section{
         justify-content: start;
@@ -573,7 +554,6 @@ footer{
         margin-top: 2.5rem;
 
         .intro{
-
             & > h4{
                 font-size: 3vw;
                 margin-bottom: 8px;
@@ -602,7 +582,6 @@ footer{
                 padding: 10px 4px;
                 box-shadow: none;
             }
-
         }
 
         .intro-img{
@@ -708,11 +687,9 @@ footer{
 
             & > h4{
                 font-size: 15px;
-                margin-bottom: 8px;
             }
 
             .name{
-                margin-bottom: 8px;
 
                 h1{
                     font-size: 15vw;
@@ -736,7 +713,12 @@ footer{
         }
         .intro-img{
             width: 75%;
-            max-height: 50%;
+            /* max-height: 50%; */
+            overflow: visible;
+        }
+        
+        img{
+            border-radius: 8px;
         }
     }
 }
