@@ -13,7 +13,7 @@ const openAboutFromNav = document.querySelector('.open-about-from-nav');
 
 setTimeout(() => {
     introRole.classList.remove('hidden')
-}, 2500);
+}, 3000);
 
 
 

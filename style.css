@@ -111,8 +111,8 @@ li{
         
         .name h1{
             overflow: hidden;
-            animation: typing 2.5s linear, blink-caret 0.7s step-end 5;
-            border-right: 0.25rem solid red;
+            animation: typing 3s steps(40, end), blink-caret 0.7s step-end 4;
+            border-right: 0.25rem solid transparent;
         }
 
         .role{
@@ -127,8 +127,8 @@ li{
                 display: inline-block;
                 white-space: nowrap;
                 overflow: hidden;
-                border-right: 0.25rem solid yellow;
-                animation: typing 2s linear 2.5s, blink-caret 0.8s step-end 2.5s 4 ;
+                border-right: 0.25rem solid transparent;
+                animation: typing 2s steps(30, end) 2.5s, blink-caret 0.8s step-end 2.5s 4 ;
             }
             
             h4 .initial-text{
@@ -181,7 +181,7 @@ li{
     }
 }
 
-@keyframes shine {
+@keyframes shine{
     from{
         left: 0%;
     }
@@ -197,7 +197,7 @@ li{
     to{
         width: 100%;
     }
-};
+}
 
 @keyframes blink-caret{
     from, to{
@@ -295,7 +295,7 @@ li{
 .project-container-heading{
     text-align: center;
     font-size: 2rem;
-    margin-block: 2.5rem;
+    margin-block: 2rem;
     color: yellow;
     text-shadow: 1px 1px black;
 }
@@ -306,7 +306,6 @@ li{
     align-items: center;
     letter-spacing: 1px;
     padding-block: 5rem;
-    /* border-bottom: 1px solid rgb(0, 0, 0, 0.1); */
     border-bottom: 1px solid rgb(16, 55, 92, 0.2);
 }
 
@@ -416,19 +415,48 @@ li{
     }
 }
 
+.project-one .project-img, .project-two .project-description{
+    animation: showOnView-left 2s linear;
+    animation-timeline: view();
+}
+
+@keyframes showOnView-left{
+    0% {
+		transform: translateX(-50%);
+	}
+	50% {
+		transform: translateX(5%);
+	}
+}
+
+.project-one .project-description, .project-two  .project-img{
+    animation: showOnView-right 2s linear;
+    animation-timeline: view();
+}
+
+@keyframes showOnView-right{
+    0% {
+		transform: translateX(50%);
+	}
+	50% {
+		transform: translateX(5%);
+	}
+}
+
+
+
+
 .contact-container > div{
-    /* width: 100%; */
-    padding: 5rem 8rem;
-    font-size: 1rem;
+    padding: 4rem 8vw;
     color: white;
     h2{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     p{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8vw;
         margin-block: 1.5rem;
     }
 }
@@ -525,14 +553,14 @@ footer{
 
     .back-to-top{
         text-align: center;
-        width: 5%;
-        aspect-ratio: 1;
+        width: 100px;
+        /* aspect-ratio: 1; */
         font-size: 2rem;
         padding: 0.5rem;
         border-radius: 50%;
         position: absolute;
         top: 0%;
-        transform: translateY(-80%);
+        transform: translateY(-100%);
     }
 
     .back-to-top i:hover{
@@ -597,11 +625,26 @@ footer{
         position: relative;
         z-index: 0;
     }
+
+    .contact-container > div{
+        padding-block: 3.5rem;
+
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-block: 1rem;
+        }
+    }
+
+    .contact-container > div{
+        padding-inline:2vw;
+    }
     
 }
 
 @media (max-width: 768px){
-
     .header {
         margin: auto;
         width: 100%;
@@ -714,6 +757,46 @@ footer{
     .project-two{
         flex-direction: column-reverse;
     }
+
+    form > div{
+        padding: 1.5rem;
+        gap: 0px;
+        flex-direction: column;
+
+        div{
+            height: 180px;
+        }
+
+        input{
+            height: 40px;
+        }
+
+        &:nth-child(2){
+            margin-bottom: 0;
+        }
+
+        label{
+            font-size: 1.2rem;
+        }
+
+        textarea{
+            height: 120px;
+        }
+    }
+
+    .contact-container > div{
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    footer{    
+        .back-to-top{
+            width: 100px;
+            font-size: 1.2rem;
+            /* transform: translateY(-60%); */
+        }
+    }
 }
 
 @media (max-width: 600px){
@@ -801,6 +884,15 @@ footer{
 
         h4{
             font-size: 1.4rem;
+        }
+    }
+
+    .contact-container > div{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
         }
     }
 }
