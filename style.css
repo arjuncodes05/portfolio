@@ -444,8 +444,6 @@ li{
 }
 
 
-
-
 .contact-container > div{
     padding: 4rem 8vw;
     color: white;
@@ -708,6 +706,10 @@ footer{
                 clip-path: polygon(54% 0, 100% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
             }
         }
+    }
+
+    .about-section{
+        height: 80vh;
     }
 
     .about-text{
