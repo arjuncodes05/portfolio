@@ -181,11 +181,11 @@ li{
         /* min-width: 500px; */
         width: 50%;
         border-radius: 8px;
-        clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
         overflow: hidden;
         
         img{
-            width: 115%;
+            clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            width: 100%;
         }
     }
 }
@@ -664,8 +664,10 @@ footer{
 
         .intro-img{
             width: 50%;
-            clip-path: polygon(54% 0, 100% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
-
+            
+            img{
+                clip-path: polygon(54% 0, 100% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
+            }
         }
     }
 }
