@@ -180,8 +180,10 @@ li{
     .intro-img{
         /* min-width: 500px; */
         width: 50%;
+        height: auto;
         border-radius: 8px;
         overflow: hidden;
+        background-color: red;
         
         img{
             clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -729,6 +731,7 @@ footer{
         }
         .intro-img{
             width: 75%;
+            max-height: 50%;
         }
     }
 }
