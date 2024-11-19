@@ -681,7 +681,12 @@ footer{
         margin-inline: auto;
 
         .intro{
+            width: 100%;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             & > h4{
                 font-size: 15px;
@@ -689,12 +694,10 @@ footer{
             }
 
             .name{
-                white-space: wrap;
-                width: 70vw;
                 margin-bottom: 8px;
 
                 h1{
-                    font-size: 75px;
+                    font-size: 70px;
                     animation: none;
                 }
             }
@@ -711,7 +714,10 @@ footer{
                 margin-top: 10px;
                 margin-inline: auto;
             }
-
+            
+        }
+        .intro-img{
+            width: 90%;
         }
     }
 }
