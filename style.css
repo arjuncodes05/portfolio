@@ -621,6 +621,12 @@ footer{
         display: flex;
         justify-content: center;
         background-color: rgb(255, 255, 255, 0.1);
+
+        img{
+            min-width: 100px;
+            width: 22vw;
+        }
+
     }
     
     header {
@@ -638,6 +644,7 @@ footer{
         align-items: center;
         margin-top: 1rem;
         padding-inline: 2vw;
+        height: calc(100vh - 8.1rem);
 
         .intro{
             text-align: center;
@@ -710,7 +717,7 @@ footer{
                 margin-bottom: 8px;
 
                 h1{
-                    font-size: 70px;
+                    font-size: 15vw;
                     animation: none;
                 }
             }
