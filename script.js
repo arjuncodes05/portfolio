@@ -1,4 +1,6 @@
 
+const cursor = document.querySelector('.cursor');
+
 
 // intro section
 const introName = document.querySelector('.name');
@@ -14,13 +16,6 @@ const openAboutFromNav = document.querySelector('.open-about-from-nav');
 setTimeout(() => {
     introRole.classList.remove('hidden')
 }, 3000);
-
-
-
-// function aboutMePopup(){
-
-// }
-
 
 aboutMeBtn.addEventListener('click', () => {
     aboutContainer.classList.add('show-about-popup')
@@ -40,4 +35,11 @@ aboutSection.addEventListener('click', (e) => {
 
 openAboutFromNav.addEventListener('click', () => {
     aboutContainer.classList.add('show-about-popup')
+})
+
+
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
 })

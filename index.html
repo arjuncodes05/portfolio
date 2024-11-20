@@ -12,17 +12,20 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="cursor"></div>
     <div class="container">
-        <header>
+        <header id="header">
             <div class="header">
-                <img src="./assets/logo.png" alt="" width="150px">
+                <a href="/">
+                    <img src="./assets/logo.png" alt="" width="150px">
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li class="open-about-from-nav">About Me</li>
                     <li><a href="#projects">Projects</a></li>
-                    <li>Contact</li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -106,7 +109,7 @@
         </section>
 
 
-        <section class="contact-container">
+        <section class="contact-container" id="contact">
             <div>
                 <h2>Contact</h2>
                 <p>Feel free to contact me, I will get back to you as soon as possible</p>
@@ -136,10 +139,12 @@
         
         <footer class="flex">
             <div class="back-to-top">
-                <i class="fa-regular fa-circle-up"></i>
-                <p>Back to top</p>
+                <a href="#header">
+                    <i class="fa-regular fa-circle-up"></i>
+                    <p>Back to top</p>
+                </a>
             </div>
-            <p>Made with ❤️ by Arjun Khatri</p>
+            <p class="credit">Made with ❤️ by Arjun Khatri</p>
         </footer>
     </div>
 </body>
