@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Khatri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="container">
+        <header id="header">
+            <div class="header">
+                <a href="/">
+                    <img src="./assets/logo.png" alt="" width="150px">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="open-about-from-nav">About Me</li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <div class="intro-section flex">
+                <div class="intro">
+                    <h4>Hello, I am</h4>
+
+                    <div class="name">
+                        <h1>Arjun Khatri.</h1>
+                    </div>
+
+                    <div class="role hidden">
+                        <h4>I am a <span class="initial-text">Front-end developer.</span></h4>
+                    </div>
+                    <button class="about-me-btn">About me <i class="fa-solid fa-circle-arrow-right"></i></button>
+                </div>
+
+                <div class="intro-img">
+                    <img src="./assets/arjun (1).jpg" alt="">
+                </div>
+                
+                <div class="about-container">
+                    <div class="about-section flex">
+                        <div class="about-text">
+                            <h2>About Me</h2>
+                            <p>I am a front-end developer with expertise in HTML, CSS, JavaScript, Tailwind CSS, React JS, and Redux/Redux-toolkit. I tackle problems head-on and enjoy finding creative solutions. I’m all about keeping things fresh and staying on top of the latest tech trends—there's always something new to learn in the world of web development! Whether it's building something sleek or tackling a tricky challenge, I’m always up for it. Let's create something awesome together!</p>
+                            <h2>Skills</h2>
+                            <div class="about-skills">
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/Html.svg" alt="">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/CSS.svg" alt="">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/tailwind.svg" alt="">
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/JS.svg" alt="">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/React.svg" alt="">
+                                    <p>React JS</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/Redux.svg" alt="">
+                                    <p>Redux</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="./assets/About-Skills/Github.svg" alt="">
+                                    <p>Git/Github</p>
+                                </div>
+                            </div>
+                            <div class="remove-about-popup">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="about-img">
+                            <img src="./assets/VectorForAbout.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="project-container">
+            <div>
+                <div class="project-container-heading">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project project-odd">
+                    <div class="project-img">
+                        <img src="/assets/project-1.png" alt="">
+                    </div>
+                    <div class="project-description">
+                        <h3><span>1.</span> oneStopShop- an eCommerce app</h3>
+                        <p>This e-commerce application is built using React.js for the frontend, styled with Tailwind CSS, and powered by Redux Toolkit for efficient state management. The backend is handled by Appwrite, ensuring secure data storage and seamless user authentication.</p>
+                        <h4>Features</h4>
+                        <ol>
+                            <li>User authentication (login/signup).</li>
+                            <li>Add to cart and wishlist functionalities.</li>
+                            <li>Syncs local storage with the database upon login.</li>
+                            <li>Persistent data storage across reloads.</li>
+                            <li>Fully responsive design for all devices.</li>
+                        </ol>
+                        <div class="visit-project-btn">
+                            <button><a href="https://write-it-up-gilt.vercel.app/" target="_blank">Visit oneStopShop <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project project-even">
+                    <div class="project-description">
+                        <h3>2. Quiz.js- a javascript quiz app</h3>
+                        <p>Quiz.js is a dynamic and engaging quiz app designed to make learning fun and interactive. With a sleek interface and smart features, it ensures an immersive experience for users of all ages.</p>
+                        <h4>Features</h4>
+                        <ol>
+                            <li>Data Retention: Uses local storage to save progress and results.</li>
+                            <li>Performance Feedback: Get detailed feedback at the end of the quiz to track your improvement.</li>
+                            <li>Timed Challenges: Countdown timer for each question adds excitement and focus.</li>
+                            <li>Flexible Navigation: Skip button lets you move past tough questions.</li>
+                            <li>Immersive Interactions: Audio toggle button for a customizable experience.</li>
+                        </ol>
+                        <div class="visit-project-btn">
+                            <button><a href="https://write-it-up-gilt.vercel.app/" target="_blank">Visit WriteItUp <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="/assets/project-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="project project-odd">
+                    <div class="project-img">
+                        <img src="/assets/project3.png" alt="">
+                    </div>
+                    <div class="project-description">
+                        <h3>3. WriteItUp - Share Your Voice with the World</h3>
+                        <p>WriteItUp is a sleek and user-friendly platform designed for writers and readers alike. Whether you're sharing your thoughts or exploring diverse perspectives, Blogify makes it effortless and engaging.</p>
+                        <h4>Features</h4>
+                        <ol>
+                            <li>Easy Posting: Create and publish blogs in just a few clicks.</li>
+                            <li>User Accounts: Secure login/signup for personalized experiences.</li>
+                            <li>Content Control: Edit or delete your posts anytime.</li>
+                            <li>Responsive Design: Optimized for seamless browsing on any device.</li>
+                        </ol>
+                        <div class="visit-project-btn">
+                            <button><a href="https://write-it-up-gilt.vercel.app/" target="_blank">Visit WriteItUp <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-container" id="contact">
+            <div>
+                <h2>Contact</h2>
+                <p>Feel free to contact me, I will get back to you as soon as possible</p>
+                <form id="form" method="POST" class="flex">
+                    <input type="hidden" name="apikey" value='1abddceb-7d0c-4119-bfa3-6eac9b96d837' >
+                    <div>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Enter your name" id="name">
+    
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Enter your name" id="name" id="email">    
+                        </div>
+    
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="send-message-btn">
+                        <button class="send-btn">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="flex">
+            <div class="back-to-top">
+                <a href="#header">
+                    <i class="fa-regular fa-circle-up"></i>
+                    <p>Back to top</p>
+                </a>
+            </div>
+            <p class="credit">Made with ❤️ by Arjun Khatri</p>
+        </footer>
+    </div>
+</body>
+</html>
