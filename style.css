@@ -151,6 +151,20 @@ li{
             }
         }
 
+        .social-media{
+            font-size: 2rem;
+            a > i{
+                color: silver;
+                margin-right: 1rem;
+                margin-top: 1rem;
+            }
+
+            a > i:hover{
+                color: white;
+                transform: scale(1.2);
+            }
+        }
+
         .about-me-btn{
             display: block;
             font-size: large;
@@ -796,7 +810,6 @@ footer{
             }
         }
     }
-
 
     .about-section{
         flex-wrap: wrap;
